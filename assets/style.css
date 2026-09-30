@@ -207,8 +207,12 @@ section{ padding:88px 0; }
   overflow:hidden;
   border:4px solid var(--gold);
   background:var(--paper);
+  aspect-ratio:4/5;
 }
 .arch-frame img{ width:100%; height:100%; object-fit:cover; background:var(--paper); }
+
+/* Product detail photos are shot landscape, so give that context more room */
+.product-hero .arch-frame{ aspect-ratio:4/3; }
 
 /* Softer alternate section for photo call-outs — keeps images blending into
    a light mat instead of sitting in a dark box */
